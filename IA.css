@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*estilização do header*/
+header {
+    background-color: #708080;
+    /*cor de fundo do header */
+    padding: 30px;
+    /*ajustamos o tamanho do prencimento de header*/
+    /*adapta site a varios tipos de telas, a seguir*/
+}
+
+.menu-header {
+    /*Aqui chamamos nossa class que armazena as listas*/
+    display: flex;
+    /*usamos para jogar itens lado a lado */
+    justify-content: end;
+    /*joga listas para direita no final da linha*/
+    flex-wrap: wrap;
+    /*quebra contyeudo para adaptar em telas menores*/
+}
+
+.menu-header>li>a {
+    color: white;
+    /*color da letra*/
+    text-decoration: none;
+    /*tira formatação de link (sublinhado)*/
+    font-size: 15px;
+    /*tamanho da letra*/
+}
+
+.menu-header>li>a:hover {
+    /*troca a cor da letra ao passar mouse por acima*/
+    color: blue;
+    /* font-size: 20px; aumenta tamanho ao passar mouse */
+    transition: 0.8s;
+    /*a mudança de tamanho es mais sutil, pode funcionar com imagens*/
+}
+
+.menu-header>li {
+    margin-left: 20px;
+    /*deixa espaçamento entre item da lista de direita para esquerda*/
+}
+
+#sessao {
+    /*chamo com # por der um id*/
+    padding: 12rem;
+    /*1 equivale a 16px*/
+    /* padding: 1em; 1 equivale a 8px */
+    /* background-color: rgb(226, 169, 226); */
+    /*função gradiente, */
+    background: linear-gradient(500deg, #cdc0cf 8.33%, rgb(90, 121, 168)100%);
+}
+
+#sessao>h1 {
+    /*alterando nosso titulo*/
+    font-size: 60px;
+    color: #434b4b;
+}
+
+#sessao>p {
+    font-size: 40px;
+}
+
+#sessao>button {
+    padding: 20px;
+    border-radius: 45px;
+    width: 15rem;
+    color: rgb(19, 77, 153);
+    border-color: rgb(19, 77, 153);
+    margin: 30px;
+    border-width: 4px;
+    /*Margem em volta do bitton*/
+    font-size: 15px;
+    /*Tamanho da letra dentro do button*/
+}
+
+#sessao>button:hover {
+    /*Efeito ao pasar o cursor*/
+    background-color: rgba(85, 85, 85, 0.986);
+    /*Atributos a cor que ficara*/
+    color: white;
+    /*Cor da letra que irá se tornar ao passar o cursor*/
+    border-color: white;
+    /*Cor da borda ao passar o cursor*/
+    transition: 0.8s;
+    /*tempo que demora a transição*/
+}
+
+#app {
+    /*Aqui chamamos...*/
+    padding: 30vh;
+    /*preenchimento*/
+    /* padding: 30vw; preenchimento */
+    background-color: rgb(190, 186, 186);
+    /* background: linear-gradient(50eg, #ad10c5 20.33%, rgb(115, 160, 228)75%); */
+    display: flex;
+    /*situa lado a lado os elementos da div*/
+    justify-content: space-between;
+    /*deixa espaço entre elementos*/
+    flex-wrap: wrap;
+    /*para adaptar site a todo tipo de telas (responsiva)*/
+}
+
+#app>div>button {
+    padding: 20px;
+    /* preenchimento de nosos botton*/
+    border-radius: 45px;
+    /*Arredondamento das bordas*/
+    width: 20vw;
+    /*Ajustamos a largura do button*/
+    color: rgb(19, 77, 153);
+    /*Cor da letra*/
+    border-color: rgb(19, 77, 153);
+    /*Cor da borda do button*/
+    margin: 30px;
+    /*Alteração das margens em volta do button*/
+    border-width: 4px;
+    /*Margem em volta do bitton*/
+    font-size: 15px;
+    /*Tamanho da letra quie esta dentro do button*/
+
+}
+
+#app>div>p {
+    font-size: 35px;
+}
+
+#app>div>button:hover {
+    /*Efeito ao pasar o cursor*/
+    background-color: rgba(85, 85, 85, 0.986);
+    /*Atributos a cor que ficara*/
+    color: white;
+    /*Cor da letra que irá se tornar ao passar o cursor*/
+    border-color: white;
+    /*Cor da borda ao passar o cursor*/
+    transition: 0.6s;
+    /*tempo que demora a transição*/
+}
+
+#app>div>img {
+    /*chamamos nossa img para estilizar*/
+    width: 30vw;
+    /*Largura da imagen usando viewport*/
+    height: 60vh;
+    /*altura da imagen usando viewport*/
+    margin-top: -100px;
+    /*Espaçamento de margin superior*/
+}
+
+#container {
+    padding: 30vh;
+    background-color: rgb(190, 186, 186);
+    /*Cor do fundo da section*/
+    flex-wrap: wrap;
+    /*Adaptando a sessaõ para quebrar em telas menores*/
+}
+
+#container>h2 {
+    /*chamamos nosso h2 para alteração*/
+    font-size: 60px;
+    /*Atribuimos um tamanho a letra*/
+    margin-top: -22rem;
+    /*Espaçamento superior usando (-)*/
+    color: rgba(8, 11, 197, 0.747);
+    text-align: center;
+    /*alinhamento do texto ao centro*/
+}
+
+#container>p {
+    /*Aqui chamamos nossa tap p*/
+    font-size: 25px;
+    /*tamanho da letra*/
+    margin-top: 30px;
+    /*espaçamaneto superior*/
+    color: rgba(94, 89, 89, 0.774);
+    /*cor da letra*/
+    /* color: rgba(94, 9, 9, 0.644); cor da letra */
+    text-align: justify;
+    /*tornando o texto justificavel*/
+}
+
+#container>.text1 {
+    /*Chamamos a class text1 que esta dentro da id container para estilização*/
+    text-align: center;
+    /*juntifica alinhamento da tag p*/
+}
+
+#container>button {
+    padding: 20px;
+    /* preenchimento de nosos botton*/
+    border-radius: 45px;
+    /*Arredondamento das bordas*/
+    width: 20vw;
+    /*Ajustamos a largura do button*/
+    color: rgb(19, 77, 153);
+    /*Cor da letra*/
+    border-color: rgb(19, 77, 153);
+    /*Cor da borda do button*/
+    margin: 50px;
+    /*Alteração das margens em volta do button*/
+    border-width: 4px;
+    /*Margem em volta do bitton*/
+    font-size: 15px;
+    /*Tamanho da letra quie esta dentro do button*/
+}
+
+#container>button:hover {
+    /*Efeito ao pasar o cursor*/
+    background-color: rgba(85, 85, 85, 0.986);
+    /*Atributos a cor que ficara*/
+    color: white;
+    /*Cor da letra que irá se tornar ao passar o cursor*/
+    border-color: white;
+    /*Cor da borda ao passar o cursor*/
+    transition: 0.6s;
+    /*tempo que demora a transição*/
+}
+
+.line {
+    /*Aqui chamamos nossa class onde armazena a linha*/
+    margin: 0 auto;
+    /*Habilitando a linha a centro deixando as laterais autom,aticas inferior e superior*/
+    width: 90%; /* largura da linha*/
+    padding: 5px;
+    border-radius: 50px;
+    border-color: black;
+      
+}
+
+#SECTION4 {
+    background-color: rgb(248, 36, 36);
+}
+#SECTION4 div img {/*Chamando nossa img da section para estilizacção*/
+    width: 30%; /*largura da imagem */
+    height: 30%;
+    /* margin-top: 15vw; distancia da margen superior */
+    margin-left: 6vw; /*distancia da margen ezquerda */
+    display: flex;
+    
+}
+
+.textz {
+    padding: 30vh;
+    text-align: center;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 4vw;
+    margin-right: 6vw;
+    margin-left: 6vw;
+    text-decoration-color: white;
+    /* background: linear-gradient(50eg, #ad10c5 20.33%, rgb(115, 160, 228)75%);  */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+footer {
+    background-color: yellowgreen;
+}
