@@ -53,7 +53,7 @@ header {
     /* padding: 1em; 1 equivale a 8px */
     /* background-color: rgb(226, 169, 226); */
     /*função gradiente, */
-    background: linear-gradient(500deg, #cdc0cf 8.33%, rgb(90, 121, 168)100%);
+    background: linear-gradient(500deg, #f1d989 8.33%, rgb(90, 121, 168)100%);
 }
 
 #sessao>h1 {
@@ -153,7 +153,7 @@ header {
 }
 
 #container {
-    padding: 30vh;
+    padding: 20vh;
     background-color: rgb(190, 186, 186);
     /*Cor do fundo da section*/
     flex-wrap: wrap;
@@ -233,32 +233,59 @@ header {
 }
 
 #SECTION4 {
-    background-color: rgb(248, 36, 36);
+    background-image:url(imagens/fundosection4.png);
+    /* padding: 100%; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    
 }
+
+#SECTION4 {
+    display: flex;
+    align-items: center;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+
+
+
+
+
+
+
 #SECTION4 div img {/*Chamando nossa img da section para estilizacção*/
-    width: 30%; /*largura da imagem */
-    height: 30%;
+    width: 80%; /*largura da imagem */
+    height: 60%;
     /* margin-top: 15vw; distancia da margen superior */
     margin-left: 6vw; /*distancia da margen ezquerda */
     display: flex;
-    
+         /* margin-top: 4vw;
+    margin-right: 6vw;
+    margin-left: 6vw;  */
+    align-items: left;
+    /* margin-top: 0px;
+    margin-left: 6vw;
+     */
 }
 
 .textz {
     padding: 30vh;
     text-align: center;
     font-size: large;
+    font-size: 170%;
+    color: rgb(208, 91, 28);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-top: 4vw;
+    /* margin-top: 4vw;
     margin-right: 6vw;
-    margin-left: 6vw;
-    text-decoration-color: white;
+    margin-left: 6vw; */
+   
     /* background: linear-gradient(50eg, #ad10c5 20.33%, rgb(115, 160, 228)75%);  */
-    display: flex;
     justify-content: center;
-    flex-wrap: wrap;
 }
 
 footer {
-    background-color: yellowgreen;
+    background-color: rgb(40, 41, 38);
 }
