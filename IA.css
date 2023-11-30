@@ -7,9 +7,9 @@
 
 /*estilização do header*/
 header {
-    background-color: #708080;
+    background-color: #000000;
     /*cor de fundo do header */
-    padding: 30px;
+    padding: 50px;
     /*ajustamos o tamanho do prencimento de header*/
     /*adapta site a varios tipos de telas, a seguir*/
 }
@@ -53,7 +53,7 @@ header {
     /* padding: 1em; 1 equivale a 8px */
     /* background-color: rgb(226, 169, 226); */
     /*função gradiente, */
-    background: linear-gradient(500deg, #f1d989 8.33%, rgb(90, 121, 168)100%);
+    background: linear-gradient(500deg, #090009, rgb(64, 110, 181)100%);
 }
 
 #sessao>h1 {
@@ -93,10 +93,10 @@ header {
 
 #app {
     /*Aqui chamamos...*/
-    padding: 30vh;
+    padding: 15vh;
     /*preenchimento*/
     /* padding: 30vw; preenchimento */
-    background-color: rgb(190, 186, 186);
+   background-color: rgb(60, 91, 133);
     /* background: linear-gradient(50eg, #ad10c5 20.33%, rgb(115, 160, 228)75%); */
     display: flex;
     /*situa lado a lado os elementos da div*/
@@ -154,19 +154,24 @@ header {
 
 #container {
     padding: 20vh;
-    background-color: rgb(190, 186, 186);
+    /* background-color: rgb(190, 186, 186); */
     /*Cor do fundo da section*/
     flex-wrap: wrap;
     /*Adaptando a sessaõ para quebrar em telas menores*/
+     background-image: url(imagens/toquemaos.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 #container>h2 {
     /*chamamos nosso h2 para alteração*/
     font-size: 60px;
     /*Atribuimos um tamanho a letra*/
-    margin-top: -22rem;
+    margin-top: -2rem;
     /*Espaçamento superior usando (-)*/
-    color: rgba(8, 11, 197, 0.747);
+    color: #f8f699;
     text-align: center;
     /*alinhamento do texto ao centro*/
 }
@@ -177,7 +182,7 @@ header {
     /*tamanho da letra*/
     margin-top: 30px;
     /*espaçamaneto superior*/
-    color: rgba(94, 89, 89, 0.774);
+    color: #f8f699;
     /*cor da letra*/
     /* color: rgba(94, 9, 9, 0.644); cor da letra */
     text-align: justify;
@@ -221,16 +226,7 @@ header {
     /*tempo que demora a transição*/
 }
 
-.line {
-    /*Aqui chamamos nossa class onde armazena a linha*/
-    margin: 0 auto;
-    /*Habilitando a linha a centro deixando as laterais autom,aticas inferior e superior*/
-    width: 90%; /* largura da linha*/
-    padding: 5px;
-    border-radius: 50px;
-    border-color: black;
-      
-}
+/* .line {} */
 
 #SECTION4 {
     background-image:url(imagens/fundosection4.png);
@@ -276,7 +272,7 @@ header {
     text-align: center;
     font-size: large;
     font-size: 170%;
-    color: rgb(208, 91, 28);
+    color: #f8f699;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     /* margin-top: 4vw;
     margin-right: 6vw;
@@ -287,5 +283,12 @@ header {
 }
 
 footer {
-    background-color: rgb(40, 41, 38);
+    background-color: rgb(0, 0, 0);
+    padding: 4em;
+    text-align: center;
+
+}
+
+.item-footer {
+     color: white;
 }
